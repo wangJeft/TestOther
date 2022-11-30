@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="5dp"
+    tools:background="#00A091">
+
+    <View
+        android:id="@+id/v_bar"
+        android:layout_width="27dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_view_bar_normal"
+        app:layout_constraintBottom_toTopOf="@id/v_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_height="50dp" />
+
+    <View
+        android:id="@+id/v_space"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_systolic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/v_bar"
+        app:layout_constraintEnd_toEndOf="@id/v_bar"
+        app:layout_constraintStart_toStartOf="@id/v_bar"
+        tools:text="30" />
+
+
+    <TextView
+        android:id="@+id/tv_diastolic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/v_bar"
+        app:layout_constraintStart_toStartOf="@id/v_bar"
+        app:layout_constraintTop_toBottomOf="@id/v_bar"
+        tools:text="30" />
+
+    <TextView
+        android:id="@+id/tv_month_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/v_bar"
+        app:layout_constraintStart_toStartOf="@id/v_bar"
+        tools:text="11-13" />
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@id/v_bar"
+        app:layout_constraintStart_toStartOf="@id/v_bar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2016" />
+</androidx.constraintlayout.widget.ConstraintLayout>
